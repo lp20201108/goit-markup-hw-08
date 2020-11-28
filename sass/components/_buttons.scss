@@ -1,0 +1,84 @@
+.button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: inherit;
+  letter-spacing: inherit;
+  border-radius: 4px;
+  border: transparent;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .call & {
+    font-weight: bold;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.06em;
+    min-width: 200px;
+    height: 50px;
+  }
+}
+
+.button.primary {
+  background-color: $effect-color;
+  color: $primary-white-color;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #f5f4fa;
+    color: $title-text-color;
+    outline: none;
+  }
+}
+
+.button.secundary {
+  background-color: #f5f4fa;
+  color: $title-text-color;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $effect-color;
+    color: $primary-white-color;
+    outline: none;
+  }
+}
+
+.subscribe.button {
+  display: block;
+  background-color: $effect-color;
+  color: $primary-white-color;
+  width: 200px;
+  height: 50px;
+  padding: 10px 62px 10px 29px;
+  margin-right: auto;
+  margin-left: 12px;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/icon-send.svg);
+    position: absolute;
+    top: 25%;
+    right: 28px;
+  }
+
+  &:focus,
+  &:hover {
+    outline: none;
+    transform: scale(0.98);
+  }
+}

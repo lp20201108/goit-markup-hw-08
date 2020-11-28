@@ -1,0 +1,22 @@
+.company-directions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.direction-item {
+  position: relative;
+}
+
+.overlay-section {
+  position: relative;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 19%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

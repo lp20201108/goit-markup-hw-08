@@ -1,0 +1,39 @@
+.section-title {
+  color: $title-text-color;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.15em;
+  text-transform: uppercase;
+
+  .company & {
+    margin-bottom: 10px;
+  }
+
+  .company-values & {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+
+  .directions & {
+    margin-bottom: 50px;
+  }
+
+  .company-directions & {
+    width: fit-content;
+    color: $primary-white-color;
+    margin: 27px 0;
+  }
+
+  .footer &,
+  .subscribe & {
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+    color: $primary-white-color;
+  }
+}
