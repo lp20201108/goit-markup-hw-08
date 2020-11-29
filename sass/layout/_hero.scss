@@ -1,34 +1,79 @@
 .hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: $dark-background-color;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero-image.jpg);
-  max-width: 1600px;
-  height: 600px;
-  margin: 0 auto;
+    url(../images/hero/hero-image-mobile.jpg);
   background-repeat: no-repeat;
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  background-position: cover;
+  background-position: center;
+  margin: 0 auto;
 
   & .button {
+    display: block;
     padding: 10px 32px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-image-mobile@2x.jpg);
   }
 }
 
 .hero-title {
-  color: $primary-white-color;
-  font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
+  font-size: 26px;
+  line-height: 1.6em;
+  color: $primary-white-color;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-align: center;
   margin-top: 0;
-  margin-bottom: 30px;
-  max-width: 696px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
+  max-width: 360px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-image-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-image-desktop.jpg);
+  }
+
+  .hero-title {
+    color: $primary-white-color;
+    font-size: 44px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    max-width: 696px;
+  }
 }

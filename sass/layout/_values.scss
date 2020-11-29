@@ -1,6 +1,6 @@
 .company-values {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 
   & li::before {
     content: "";
@@ -10,6 +10,7 @@
     background-color: #f5f4fa;
     border-radius: 4px;
     margin-bottom: 30px;
+    margin-top: 0;
     background-repeat: no-repeat;
     background-image: url(../images/antenna.svg);
     background-position: center;
@@ -25,17 +26,47 @@
   & li:nth-child(4)::before {
     background-image: url(../images/astronaut.svg);
   }
-
-  & li:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 
 .description {
   display: inline-block;
+  padding: 0;
   margin-top: 0;
 }
 
-.priority {
-  padding-bottom: 0px;
+@media screen and (min-width: 768px) {
+  .company-values {
+    max-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    & li::before {
+      margin-bottom: 30px;
+    }
+  }
+  .description {
+    display: inline-block;
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .company-values {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    & li:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .description {
+    width: 270px;
+  }
+  .priority {
+    padding-bottom: 0px;
+  }
 }
