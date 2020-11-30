@@ -125,9 +125,9 @@
   }
 }
 
-.subscribe-form {
-  display: flex;
-}
+// .subscribe-form {
+//   display: flex;
+// }
 
 .suscribe-email-input {
   display: block;
@@ -149,5 +149,14 @@
     border: none;
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 4px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .suscribe-email-input {
+    margin-bottom: 20px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

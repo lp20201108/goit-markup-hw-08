@@ -1,82 +1,145 @@
-// .footer {
-//   background-color: $dark-background-color;
+.footer {
+  background-color: $dark-background-color;
 
-//   & .address {
-//     color: $primary-white-color;
+  & .address {
+    color: $primary-white-color;
+  }
+  & .social-icon {
+    fill: $primary-white-color;
+  }
+}
+
+.email,
+.tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address {
+  font-style: inherit;
+  color: #212121;
+  min-width: 231px;
+  min-height: 81px;
+  text-align: left;
+}
+
+.footer-logo {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .address {
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin-right: 160px;
+    margin-left: 160px;
+  }
+
+  .adress-footer {
+    margin-bottom: 60px;
+  }
+  .social-footer {
+    // max-width: 206px;
+    margin-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .first-division-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding-right: 89px;
+    padding-left: 76px;
+  }
+
+  .subscribe-footer {
+    justify-content: center;
+  }
+
+  .footer-logo {
+    margin-right: auto;
+    margin-left: 52px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    height: 252px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .first-division-footer {
+    display: flex;
+  }
+
+  .adress-footer {
+    margin-right: 70px;
+  }
+
+  .social-footer {
+    padding: 0px;
+    width: 206px;
+    height: 80px;
+    margin-right: 93px;
+  }
+
+  .subscribe-form {
+    display: flex;
+  }
+
+  .contacts-footer li:not(:last-child) {
+    margin-top: 0;
+    margin-bottom: 9px;
+  }
+}
+
+//     .adress-footer {
+//       display: inline-block;
+//       align-items: center;
+//       justify-content: center;
+//       margin: 0 auto;
+//     }
+
+//
+
+//     .social-footer {
+//       padding: 0px;
+//       width: 206px;
+//       height: 80px;
+//       margin-right: 93px;
+
+//       & .social-list-item:not(:last-child) {
+//         margin-right: 10px;
+//       }
+//     }
+
+//     // .subscribe-footer {
+//     //   width: 570px;
+//     height: 86px;
+//     padding-left: 0px;
+//     margin-right: 215px;
 //   }
 // }
 
-// .footer-logo {
-//   display: block;
-//   margin-top: 0;
-//   margin-bottom: 30px;
-// }
-
-// .footer-container {
-//   display: flex;
-//   flex-wrap: wrap;
-//   align-items: center;
-//   justify-content: center;
-// }
-
-// // .footer-container {
-// //   display: flex;
-// //   align-items: baseline;
-// //   height: 252px;
-// //   padding-top: 60px;
-// //   padding-bottom: 60px;
-// // }
-
-// .adress-footer {
-//   display: inline-block;
-//   align-items: center;
-//   justify-content: center;
-//   margin: 0 auto;
-// }
-
-// // .adress-footer {
-// //   margin-right: 70px;
-// // }
-
-// // .address {
-// //   font-style: inherit;
-// //   color: #212121;
-// //   width: 231px;
-// //   height: 81px;
-// // }
-
-// .email,
-// .tel {
-//   color: rgba(255, 255, 255, 0.6);
-// }
-
-// // .contacts-footer li:not(:last-child) {
-// //   margin-top: 0;
-// //   margin-bottom: 9px;
-// // }
-
-// // .social-footer {
-// //   padding: 0px;
-// //   width: 206px;
-// //   height: 80px;
-// //   margin-right: 93px;
-
-// //   & .social-list-item:not(:last-child) {
-// //     margin-right: 10px;
+// //   .adress-footer {
+// //     display: block;
+// //     align-items: center;
+// //     justify-content: center;
+// //     margin: 0 auto;
 // //   }
+// //  & .social-list-item:not(:last-child) {
+// //   margin-right: 10px;
+// // }
 
-// //   & .social-icon {
-// //     fill: $primary-white-color;
+// //   .subscribe-footer {
+// //     display: flex;
 // //   }
-// // }
-
-// .subscribe-footer {
-//   display: flex;
-// }
-
-// // .subscribe-footer {
-// //   width: 570px;
-// //   height: 86px;
-// //   padding-left: 0px;
-// //   margin-right: 215px;
-// // }
