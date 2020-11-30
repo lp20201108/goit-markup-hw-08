@@ -1,42 +1,74 @@
-// .client-list {
-//   display: flex;
-//   & li:not(:last-child) {
-//     margin-right: 30px;
-//   }
-// }
+.client-list {
+  display: flex;
+}
 
-// .client-svg {
-//   fill: #afb1b8;
-//   transition-property: fill;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-// }
+.client-svg {
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-// .client-link {
-//   transition-property: border-color;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.client-link {
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-//   .client-list-item & {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 170px;
-//     height: 90px;
-//     margin-right: 0px;
-//     border: 1px solid #afb1b8;
-//     border-radius: 4px;
-//     transition-property: background-color;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//   }
+  .client-list-item & {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 90px;
+    margin-right: 0px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-//   &:hover,
-//   &:focus {
-//     border-color: $effect-color;
+  &:hover,
+  &:focus {
+    border-color: $effect-color;
 
-//     & .client-svg {
-//       fill: $effect-color;
-//     }
-//   }
-// }
+    & .client-svg {
+      fill: $effect-color;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .client-list-item:not(:nth-child(5)) {
+    margin-bottom: 30px;
+  }
+
+  .client-list-item:nth-child(6) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .client-list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-list {
+    display: flex;
+    & li:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .client-list-item & {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    margin-right: 0px;
+  }
+}
