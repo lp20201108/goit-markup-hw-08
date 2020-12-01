@@ -29,6 +29,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  .portofolio-description {
+    width: 354px;
+    height: 126px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -51,12 +56,6 @@
     letter-spacing: 0.06em;
     margin-bottom: 4px;
     color: $title-text-color;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio-list-item:not(:nth-child(3n)) {
-    margin-right: 30px;
   }
 }
 

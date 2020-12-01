@@ -4,6 +4,7 @@
 }
 
 .modal-form-title {
+  display: inline;
   font-weight: bold;
   font-size: 20px;
   line-height: 1.15px;
@@ -11,10 +12,11 @@
   color: #212121;
 }
 
-// @media screen and (min-width: 320px) and (max-width: 1199px) {
-//   .modal-form-title {
-//   }
-// }
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .modal-form-title {
+    line-height: 1.5em;
+  }
+}
 
 .policy-link {
   text-decoration: underline;
@@ -115,8 +117,8 @@
     width: 16px;
     height: 16px;
     border: 2px solid #212121;
-    margin-right: 9px;
-    border-radius: 4px;
+    // margin-right: 4px;
+    border-radius: 2px;
     background-image: url(../images/icon-checked.svg);
     background-repeat: no-repeat;
     background-color: $primary-white-color;
@@ -130,15 +132,19 @@
   }
 }
 
+.form-policy-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 @media screen and (min-width: 320px) and (max-width: 1199px) {
   .form-policy-label {
-    display: inline;
+    display: inline-block;
     font-size: 12px;
+    line-height: 1.16em;
   }
 }
-// .subscribe-form {
-//   display: flex;
-// }
 
 .suscribe-email-input {
   display: block;

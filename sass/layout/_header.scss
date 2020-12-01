@@ -4,92 +4,153 @@
   border: 1px solid #ececec;
 }
 
-// .navigation {
-//   display: flex;
-//   align-items: center;
-// }
+.nav-logo {
+  margin-right: 90px;
+}
 
-// .nav-logo {
-//   margin-right: 90px;
-// }
+.site-nav {
+  & .link.current {
+    color: $effect-color;
+    position: relative;
 
-// .site-nav {
-//   display: flex;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0px;
+      bottom: -34px;
+      width: 100%;
+      height: 4px;
+      background-color: $effect-color;
+      border-radius: 2px;
+    }
+  }
 
-//   & li:not(:last-child) {
-//     display: inline-block;
-//     margin-right: 30px;
-//   }
-//   & .link.current {
-//     color: $effect-color;
-//     position: relative;
+  a {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-//     &::after {
-//       content: "";
-//       position: absolute;
-//       left: 0px;
-//       bottom: -34px;
-//       width: 100%;
-//       height: 4px;
-//       background-color: $effect-color;
-//       border-radius: 2px;
-//     }
-//   }
-// }
+    &:hover,
+    &:focus {
+      color: $effect-color;
+    }
+  }
+}
 
-// .site-nav a {
-//   color: $title-text-color;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 16px;
-//   letter-spacing: 0.02em;
-//   transition-property: color;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.contacts {
+  & a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #757575;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-//   &:hover,
-//   &:focus {
-//     color: $effect-color;
-//   }
-// }
+    &:hover,
+    &:focus {
+      color: $effect-color;
 
-// .contacts {
-//   display: flex;
-//   & a {
-//     color: #757575;
-//     transition-property: color;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      & .contacts-svg,
+      & .contacts-svg {
+        fill: $effect-color;
+      }
+    }
+  }
+}
 
-//     &:hover,
-//     &:focus {
-//       color: $effect-color;
+.contacts-svg {
+  fill: #757575;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-//       & .contacts-svg,
-//       & .contacts-svg {
-//         fill: $effect-color;
-//       }
-//     }
-//   }
-// }
+@media screen and (max-width: 767px) {
+  .navigation-menu {
+    margin-bottom: 60px;
+  }
 
-// .contacts-svg {
-//   fill: #757575;
-//   transition-property: color;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-// }
+  .site-nav.list {
+    display: inline-block;
 
-// .contacts-item {
-//   display: flex;
-//   align-items: center;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
+    & li:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
 
-//   &:not(:last-child) {
-//     margin-left: auto;
-//     margin-right: 30px;
-//   }
-// }
+  .adress-nav .contacts-item:not(:last-child) {
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  .nav-logo {
+    margin-right: 88px;
+  }
+
+  .navigation-menu {
+    display: flex;
+  }
+
+  .site-nav.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .site-nav li:not(:last-child) {
+    display: inline-block;
+    margin-right: 50px;
+  }
+
+  .site-nav a {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.16;
+  }
+  .contacts-menu {
+    text-align: left;
+  }
+
+  .contacts a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .nav-logo {
+      margin-right: 94px;
+    }
+
+    .contacts-list {
+      display: flex;
+    }
+
+    .contacts-item {
+      display: inline-block;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+
+      &:not(:last-child) {
+        margin-left: auto;
+        margin-right: 30px;
+      }
+    }
+  }
+}
