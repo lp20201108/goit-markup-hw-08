@@ -65,12 +65,15 @@ body.modal-open {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+  .directions {
+    padding-bottom: 64px;
+    padding-top: 80px;
+  }
 }
 
 .container {
   width: 100%;
   padding: 0px 15px;
-  outline: 1px solid tomato;
   margin: 0 auto;
 }
 
@@ -915,7 +918,7 @@ body.modal-open {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .description {
-    display: block;
+    display: inline-block;
     margin-top: 0;
   }
   .description:not(:last-child) {
@@ -963,6 +966,7 @@ body.modal-open {
   }
   .direction-item {
     position: relative;
+    margin-bottom: 0px;
   }
   .overlay-section {
     position: relative;
@@ -1277,6 +1281,11 @@ body.modal-open {
   letter-spacing: 0.06em;
   margin-bottom: 4px;
   color: black;
+}
+
+.portofolio .portofolio-description {
+  width: 370px;
+  height: 126px;
 }
 
 .portofolio-list-item {

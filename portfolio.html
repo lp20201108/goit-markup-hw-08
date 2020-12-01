@@ -27,31 +27,49 @@
                         <div class="logo"> <span>Web</span>
                             <span class="logo studio">Studio</span>
                         </div>
-                    </a>
-                </div>
-                <ul class="site-nav list">
-                    <li> <a class="link " href="index.html">Студия</a></li>
-                    <li> <a class="link current" href="./portfolio.html">Портфолио</a></li>
-                    <li> <a class="link" href="">Контакты</a></li>
-                </ul>
-            </nav>
-            <adress class="adress-nav">
-                <ul class="contacts list">
-                    <li class="contacts-item"><a href="mailto:info@devstudio.com">
-                            <svg class="contacts-svg" width="16" height="12">
-                                <use use href="./images/sprite.svg#envelope"> </use>
-                            </svg>
-                            info@devstudio.com </a>
-                    </li>
+                    </a> </div>
     
-                    <li class="contacts-item"><a href="tel:+380961111111">
-                            <svg class="contacts-svg" width="10" height="16">
-                                <use use href="./images/sprite.svg#smartphone"> </use>
-                            </svg>
-                            +38 096 111 11 11 </a>
-                    </li>
-                </ul>
-            </adress>
+                <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-container"
+                    data-menu-button>
+    
+                    <svg class="menu" width="20" height="20" aria-label="кнопка переключения мобильного меню">
+                        <use class="icon-cross-nav" href="./images/sprite.svg#cross"></use>
+                        <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+                    </svg>
+                </button>
+    
+                <div class="menu-container" id="menu-container" data-menu>
+                    <div class="navigation-menu">
+                        <ul class="site-nav list">
+                            <li> <a class="link " href="index.html">Студия</a></li>
+                            <li> <a class="link current " href="./portfolio.html">Портфолио</a></li>
+                            <li> <a class="link" href="">Контакты</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="contacts-menu">
+                        <adress class="adress-nav">
+                            <ul class="contacts list">
+                                <li class="contacts-item"><a href="mailto:info@devstudio.com">
+                                        <svg class="contacts-svg" width="16" height="12">
+                                            <use use href="./images/sprite.svg#envelope"> </use>
+                                        </svg> info@devstudio.com </a>
+                                </li>
+    
+                                <li class="contacts-item"><a href="tel:+380961111111">
+                                        <svg class="contacts-svg" width="10" height="16">
+                                            <use use href="./images/sprite.svg#smartphone"> </use>
+                                        </svg>
+                                        +38 096 111 11 11 </a>
+                                </li>
+                            </ul>
+                        </adress>
+                    </div>
+    
+                </div>
+    
+            </nav>
+    
         </div>
     </header>
 
@@ -78,7 +96,7 @@
                    <picture>
                         <!-- <source srcset="./images/portfolio/tehnokreak-descktop.webp 1x, ./images/portfolio/tehnokreak-descktop@2x.webp 2x" media="(min-width: 1200px)"
                             type="image/webp">  -->
-                        <source srcset="./images/portfolio/tehnokreak-tablet.jpg 1x, ./images/portfolio/tehnokreak-tablet@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/portfolio/tehnokreak-desktop.jpg 1x, ./images/portfolio/tehnokreak-desktop@2x.jpg 2x" media="(min-width: 1200px)">
                         <source srcset="./images/portfolio/tehnokreak-tablet.webp 1x, ./images/portfolio/tehnokreak-tablet@2x.webp 2x" media="(min-width: 768px)"
                             type="image/webp">
                         <source srcset="./images/portfolio/tehnokreak-tablet.jpg 1x, ./images/portfolio/tehnokreak-tablet@2x.jpg 2x" media="(min-width: 768px)">
@@ -103,7 +121,7 @@
                     <picture>
                         <!-- <source srcset="./images/portfolio/poster-descktop.webp 1x, ./images/portfolio/poster-descktop@2x.webp 2x"
                             media="(min-width: 1200px)" type="image/webp"> -->
-                        <source srcset="../images/portfolio/poster-tablet.jpg 1x, ./images/portfolio/poster-tablet@2x.jpg 2x"
+                        <source srcset="../images/portfolio/poster-desktop.jpg 1x, ./images/portfolio/poster-desktop@2x.jpg 2x"
                             media="(min-width: 1200px)">
                         <source srcset="./images/portfolio/poster-tablet.webp 1x, ./images/portfolio/poster-tablet@2x.webp 2x"
                             media="(min-width: 768px)" type="image/webp">
@@ -118,7 +136,7 @@
                     </picture>
                 
                 <div class="portofolio-description">
-                    <h3 class="project"> Постер New Orlean vs Golden </h3>
+                    <h3 class="project"> Постер New Orlean vs Golden Star </h3>
                  <p class="type">Дизайн</p></a>
                 </div>
                                 
@@ -128,8 +146,8 @@
                     <picture>
                         <!-- <source srcset="./images/portfolio/seafood-descktop.webp 1x, ./images/portfolio/seafood-descktop@2x.webp 2x"
                            media="(min-width: 1200px)" type="image/webp"> -->
-                        <source src="./images/portfolio/seafood-descktop.jpg 1x, ./images/portfolio/seafood-descktop@2x.jpg 2x"
-                           media="(min-width: 1200px)">
+                        <source src="./images/portfolio/seafood-desktop.jpg 1x, ./images/portfolio/seafood-desktop@2x.jpg 2x"
+                           media="(min-width:1200px)">
                           <source srcset="./images/portfolio/seafood-tablet.webp 1x, ./images/portfolio/seafood-tablet@2x.webp 2x"
                           media="(min-width: 768px)" type="image/webp">
                          <source srcset="./images/portfolio/seafood-tablet.jpg 1x, ./images/portfolio/seafood-tablet@2x.jpg 2x"
@@ -151,7 +169,7 @@
                     <picture>
                     <!--  <source srcset="./images/portfolio/primeproject-descktop.webp 1x, ./images/portfolio/primeproject-descktop@2x.webp 2x"
                             media="(min-width: 1200px)" type="image/webp"> -->
-                        <source srcset="./images/portfolio/primeproject-tablet.jpg 1x, ./images/portfolio/primeproject-tablet@2x.jpg 2x"
+                        <source srcset="./images/portfolio/primeproject-desktop.jpg 1x, ./images/portfolio/primeproject-desktop@2x.jpg 2x"
                             media="(min-width: 1200px)">
                         <source srcset="./images/portfolio/primeproject-tablet.webp 1x, ./images/portfolio/primeproject-tablet@2x.webp 2x"
                             media="(min-width: 768px)" type="image/webp">
@@ -174,7 +192,7 @@
                     <picture> 
                     <!--  <source srcset="./images/portfolio/boxesproject-descktop.webp 1x, ./images/portfolio/boxesproject-descktop@2x.webp 2x"
                             media="(min-width: 1200px)" type="image/webp"> -->
-                        <source srcset="./images/portfolio/boxesproject-tablet.jpg 1x, ./images/portfolio/boxesproject-tablet@2x.jpg 2x"
+                        <source srcset="./images/portfolio/boxesproject-desktop.jpg 1x, ./images/portfolio/boxesproject-desktop@2x.jpg 2x"
                             media="(min-width: 1200px)">
                         <source srcset="./images/portfolio/boxesproject-tablet.webp 1x, ./images/portfolio/boxesproject-tablet@2x.webp 2x"
                             media="(min-width: 768px)" type="image/webp">
@@ -195,7 +213,7 @@
                     <picture>
                     <!--  <source srcset="./images/portfolio/inspirationwebsite-descktop.webp 1x, ./images/portfolio/inspirationwebsite-descktop@2x.webp 2x"
                             media="(min-width: 1200px)" type="image/webp"> -->
-                        <source srcset="./images/portfolio/inspirationwebsite-tablet.jpg 1x, ./images/portfolio/inspirationwebsite-tablet@2x.jpg 2x"
+                        <source srcset="./images/portfolio/inspirationwebsite-desktop.jpg 1x, ./images/portfolio/inspirationwebsite-desktop@2x.jpg 2x"
                             media="(min-width: 1200px)">
                         <source srcset="./images/portfolio/inspirationwebsite-tablet.webp 1x, ./images/portfolio/inspirationwebsite-tablet@2x.webp 2x"
                             media="(min-width: 768px)" type="image/webp">
@@ -242,7 +260,7 @@
                     <picture>
                         <!-- <source srcset="./images/portfolio/labproject-descktop.webp 1x, ./images/portfolio/labproject-descktop@2x.webp 2x"
                             media="(min-width: 1200px)" type="image/webp"> -->
-                        <source srcset="./images/portfolio/labproject-tablet.jpg 1x, ./images/portfolio/labproject-tablet@2x.jpg 2x""
+                        <source srcset="./images/portfolio/labproject-desktop.jpg 1x, ./images/portfolio/labproject-desktop@2x.jpg 2x"
                             media="(min-width: 1200px)">
                         <source srcset="./images/portfolio/labproject-tablet.webp 1x, ./images/portfolio/labproject-tablet@2x.webp 2x"
                             media="(min-width: 768px)" type="image/webp">
@@ -264,7 +282,7 @@
                     <picture>
                     <!-- <source srcset="./images/portfolio/business-descktop.webp 1x, ./images/portfolio/business-descktop@2x.webp 2x"
                             media="(min-width: 1200px)" type="image/webp"> -->
-                        <source srcset= "./images/portfolio/business-tablet.jpg 1x, ./images/portfolio/business-tablet@2x.jpg 2x"
+                        <source srcset= "./images/portfolio/business-desktop.jpg 1x, ./images/portfolio/business-desktop@2x.jpg 2x"
                             media="(min-width: 1200px)">
                         <source srcset="./images/portfolio/business-tablet.webp 1x, ./images/portfolio/business-tablet@2x.webp 2x"
                             media="(min-width: 768px)" type="image/webp">
