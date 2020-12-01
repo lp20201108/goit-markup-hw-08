@@ -47,6 +47,10 @@ body {
   margin: 0;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .main,
 .section,
 .footer {
@@ -358,6 +362,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: all 250ms linear;
+  overflow-y: scroll;
 }
 
 .modal-window {
@@ -371,6 +376,26 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .modal-window {
+    position: fixed;
+    width: 100%;
+    max-width: 450px;
+    min-height: 609px;
+  }
 }
 
 .modal-close-button {
@@ -528,6 +553,13 @@ body {
   border-radius: 2px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .form-policy-label {
+    display: inline;
+    font-size: 12px;
+  }
+}
+
 .suscribe-email-input {
   display: block;
   width: 358px;
@@ -562,6 +594,8 @@ body {
 
 .menu-btn {
   display: flex;
+  top: 100%;
+  left: 0px;
   margin: 0;
   padding: 0;
   border: none;
@@ -586,8 +620,8 @@ body {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: white;
   height: 430px;
+  background-color: white;
   text-align: center;
   font-size: 18px;
 }
@@ -775,7 +809,7 @@ body {
   font-size: 16px;
   line-height: 1.18em;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .team-list-item {
@@ -785,54 +819,13 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1200) {
-  .team-list {
-    display: flex;
-    justify-content: space-between;
-  }
+.team-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .team-item-description {
-    padding: 0 122px 24px 122px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 320px) and (max-width: 1200) {
-  .team-item-description .team-list {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 320px) and (max-width: 767px) {
-  .team-item-description .team-item-description {
-    padding: 0 122px 24px 122px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 320px) and (max-width: 1200) {
-  .team-item-description .team-list {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 320px) and (max-width: 767px) {
-  .team-item-description .team-item-description {
-    padding: 0 122px 24px 122px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 320px) and (max-width: 1200) {
-  .team-item-description .team-list {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 320px) and (max-width: 767px) {
-  .team-item-description .team-item-description {
     padding: 0 122px 24px 122px;
   }
 }
@@ -852,15 +845,28 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .team-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-height: 536px;
   }
   .team-list-item {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list-item {
+    width: 270px;
+    height: 428px;
+  }
+  .team-item-description {
+    display: block;
+    margin: 0 auto;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 30px;
   }
 }
 
@@ -912,7 +918,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .client-list {
     flex-wrap: wrap;
     justify-content: space-between;

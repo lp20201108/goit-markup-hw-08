@@ -47,6 +47,10 @@ body {
   margin: 0;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .main,
 .section,
 .footer {
@@ -461,6 +465,13 @@ body {
   border-radius: 2px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .form-policy-label {
+    display: inline;
+    font-size: 12px;
+  }
+}
+
 .suscribe-email-input {
   display: block;
   width: 358px;
@@ -491,42 +502,6 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-.menu-btn {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.menu-btn .icon-cross-nav {
-  display: none;
-}
-
-.menu-btn.is-open .icon-cross-nav {
-  display: block;
-}
-
-.menu-btn.is-open .icon-menu {
-  display: none;
-}
-
-.menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  height: 430px;
-  text-align: center;
-  font-size: 18px;
-}
-
-.menu-container is-open {
-  display: block;
 }
 
 .header {

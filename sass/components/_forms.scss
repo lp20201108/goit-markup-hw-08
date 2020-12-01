@@ -11,6 +11,11 @@
   color: #212121;
 }
 
+// @media screen and (min-width: 320px) and (max-width: 1199px) {
+//   .modal-form-title {
+//   }
+// }
+
 .policy-link {
   text-decoration: underline;
   color: $effect-color;
@@ -125,6 +130,12 @@
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .form-policy-label {
+    display: inline;
+    font-size: 12px;
+  }
+}
 // .subscribe-form {
 //   display: flex;
 // }

@@ -33,6 +33,10 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   margin: 0;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 .main,

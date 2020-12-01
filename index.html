@@ -21,53 +21,59 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="navigation">
-                <div class="nav-logo">
-                    <a class="logo link" href="index.html">
-                        <div class="logo"> <span>Web</span>
-                            <span class="logo studio">Studio</span>
-                        </div>
-                    </a>
-                    <button type="button" 
-                    class="menu-btn" 
-                     aria-expanded="false"
-                    aria-controls="menu-container"
-                    data-menu-button>
+         <nav class="navigation">
+          <div class="nav-logo">
+        <a class="logo link" href="index.html">
+            <div class="logo"> <span>Web</span>
+             <span class="logo studio">Studio</span>
+               </div>
+          </a> </div>
+
+         <button type="button" 
+         class="menu-btn" 
+        aria-expanded="false"
+         aria-controls="menu-container"
+          data-menu-button>
                     
-                        <svg class="menu" width="40" height="40" 
-                        aria-label="кнопка переключения мобильного меню">
-                            <use class="icon-cross-nav" href="./images/sprite.svg#cross"></use>
-                            <use class="icon-menu" href="./images/sprite.svg#menu"></use>
-                        </svg>
-                    </button>
-                <div class="menu-container" id="menu-container" data-menu>
+             <svg class="menu" width="40" height="40" 
+             aria-label="кнопка переключения мобильного меню">
+            <use class="icon-cross-nav" href="./images/sprite.svg#cross"></use>
+              <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+              </svg>
+           </button>
 
-                </div>
+       <div class="menu-container" id="menu-container" data-menu>
+          <div class="navigation-menu">
+              <ul class="site-nav list">
+                 <li> <a class="link current" href="index.html">Студия</a></li>
+                   <li> <a class="link " href="./portfolio.html">Портфолио</a></li>
+                 <li> <a class="link" href="">Контакты</a></li>
+                 </ul>
+                  </div>
 
-                </div>
-                <ul class="site-nav list">
-                    <li> <a class="link current" href="index.html">Студия</a></li>
-                    <li> <a class="link " href="./portfolio.html">Портфолио</a></li>
-                    <li> <a class="link" href="">Контакты</a></li>
-                </ul>
-            </nav>
-            <adress class="adress-nav">
-                <ul class="contacts list">
-                    <li class="contacts-item"><a href="mailto:info@devstudio.com">
-                            <svg class="contacts-svg" width="16" height="12">
-                                <use use href="./images/sprite.svg#envelope"> </use>
-                            </svg>
-                            info@devstudio.com </a>
+        <div class="contacts-menu">
+             <adress class="adress-nav">
+              <ul class="contacts list">
+               <li class="contacts-item"><a href="mailto:info@devstudio.com">
+               <svg class="contacts-svg" width="16" height="12">
+                <use use href="./images/sprite.svg#envelope"> </use>
+                   </svg>  info@devstudio.com </a>
                     </li>
-    
-                    <li class="contacts-item"><a href="tel:+380961111111">
-                            <svg class="contacts-svg" width="10" height="16">
-                                <use use href="./images/sprite.svg#smartphone"> </use>
-                            </svg>
-                            +38 096 111 11 11 </a>
-                    </li>
-                </ul>
-            </adress>
+                        
+               <li class="contacts-item"><a href="tel:+380961111111">
+                    <svg class="contacts-svg" width="10" height="16">
+                     <use use href="./images/sprite.svg#smartphone"> </use>
+                     </svg>
+                       +38 096 111 11 11 </a>
+                       </li>
+            </ul>
+              </adress>
+             </div>
+
+         </div>
+   
+       </nav>
+          
         </div>
     </header>
         
@@ -183,13 +189,13 @@
       <ul class="team-list list">
         <li class="team-list-item">
             <picture>
-                    <source
+                  <!-- <source
                         srcset="./images/team/nicolai-descktop.webp 1x, ./images/team/nicolai-descktop@2x.webp 2x"
-                        media="(min-width: 1200px)" type="image/webp"> 
+                        media="(min-width: 1200px)" type="image/webp"> -->
                     <source
-                        srcset="./images/team/nicolai-descktop.jpg 1x, ./images/team/nicolai-descktop@2x.jpg 2x"
+                        srcset="./images/team/nicolai-tablet.jpg 1x, ./images/team/nicolai-tablet@2x.jpg 2x"
                         media="(min-width: 1200px)">
-                    <source srcset="./images/team/nicolai-tablet.webp 1x, ./images/team/nicolai-tablet@2x.webp 2x"
+                    <source srcset="./images/team/nicolai-tablet.jpg 1x, ./images/team/nicolai-tablet@2x.webp 2x"
                         media="(min-width: 768px)" type="image/webp">
                     <source srcset="./images/team/nicolai-tablet.jpg 1x, ./images/team/nicolai-tablet@2x.jpg 2x"
                         media="(min-width: 768px)">
@@ -228,8 +234,8 @@
       <li class="team-list-item">
           <picture>
              
-                   <source srcset="./images/team/oliga-descktop.webp 1x, ./images/team/oliga-descktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"> 
-                    <source srcset="./images/team/oliga-descktop.jpg 1x, ./images/team/oliga-descktop@2x.jpg 2x" media="(min-width: 1200px)">
+                  <!---<source srcset="./images/team/oliga-descktop.webp 1x, ./images/team/oliga-descktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"> -->
+                    <source srcset="./images/team/oliga-tablet.jpg 1x, ./images/team/oliga-tablet@2x.jpg 2x" media="(min-width: 1200px)">
                     <source srcset="./images/team/oliga-tablet.webp 1x, ./images/team/oliga-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
                     <source srcset="./images/team/oliga-tablet.jpg 1x, ./images/team/oliga-tablet@2x.jpg 2x" media="(min-width: 768px)">
                     <source srcset="./images/team/oliga-mobile.webp 1x, ./images/team/oliga-mobile@2x.webp 2x" media="(min-width: 320px)" type="image/webp">
@@ -264,9 +270,9 @@
       
         <li class="team-list-item">
             <picture>
-             <source srcset="./images/team/andrei-descktop.webp 1x, ./images/team/andrei-descktop@2x.webp 2x" 
-                    media="(min-width: 1200px)" type="image/webp">
-                <source srcset="./images/team/andrei-descktop.jpg 1x, ./images/team/andrei-descktop@2x.jpg 2x" media="(min-width: 1200px)">
+             <!-- <source srcset="./images/team/andrei-descktop.webp 1x, ./images/team/andrei-descktop@2x.webp 2x" 
+                    media="(min-width: 1200px)" type="image/webp"> -->
+                <source srcset="./images/team/andrei-tablet.jpg 1x, ./images/team/andrei-tablet@2x.jpg 2x" media="(min-width: 1200px)">
                 <source srcset="./images/team/andrei-tablet.webp 1x, ./images/team/andrei-tablet@2x.webp 2x" media="(min-width: 768px)"
                     type="image/webp">
                 <source srcset="./images/team/andrei-tablet.jpg 1x, ./images/team/andrei-tablet@2x.jpg 2x" media="(min-width: 768px)">
@@ -305,8 +311,8 @@
     
             <li class="team-list-item">
                 <picture>
-                    <source srcset="./images/team/ivan-descktop.webp 1x, ./images/team/ivan-descktop@2x.webp 2x"  media="(min-width: 1200px)" type="image/webp"> 
-                        <source srcset="./images/team/ivan-descktop.jpg 1x, ./images/team/ivan-descktop@2x.jpg 2x" media="(min-width: 1200px)">
+                   <!-- <source srcset="./images/team/ivan-descktop.webp 1x, ./images/team/ivan-descktop@2x.webp 2x"  media="(min-width: 1200px)" type="image/webp"> -->
+                        <source srcset="./images/team/ivan-tablet.jpg 1x, ./images/team/ivan-tablet@2x.jpg 2x" media="(min-width: 1200px)">
                         <source srcset="./images/team/ivan-tablet.webp 1x, ./images/team/ivan-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
                         <source srcset="./images/team/ivan-tablet.jpg 1x, ./images/team/ivan-tablet@2x.jpg 2x" media="(min-width: 768px)">
                         <source srcset="./images/team/ivan-mobile.webp 1x, ./images/team/ivan-mobile@2x.webp 2x" media="(min-width: 320px)" type="image/webp">
@@ -444,7 +450,8 @@
 
 <!-- Модальное окно -->
 
-
+ 
+  </div>
 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal-window">
