@@ -20,20 +20,27 @@
     & .button {
       margin-bottom: 15px;
     }
-    .portofolio-list {
-      display: block;
-      justify-content: center;
-    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portofolio ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .portofolio-list {
-    justify-content: space-between;
+  .portfolio-list-item:not(:nth-child(2n)) {
+    margin-right: 30px;
   }
+}
 
-  // .portofolio-list-item:nth-child(odd) {
-  //   margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .portfolio-list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
 }
 
 .portofolio {
@@ -45,10 +52,11 @@
     margin-bottom: 4px;
     color: $title-text-color;
   }
+}
 
-  & ul {
-    display: inline-flex;
-    flex-wrap: wrap;
+@media screen and (min-width: 1200px) {
+  .portfolio-list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
   }
 }
 
@@ -58,9 +66,6 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  // &:not(:nth-child(3n)) {
-  //   margin-right: 30px;
-  // }
   &:hover {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);

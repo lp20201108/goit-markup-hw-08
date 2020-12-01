@@ -627,15 +627,25 @@ body.modal-open {
   .filters .button {
     margin-bottom: 15px;
   }
-  .filters .portofolio-list {
-    display: block;
-    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .portofolio ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .portofolio-list {
-    justify-content: space-between;
+  .portfolio-list-item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
   }
 }
 
@@ -648,9 +658,10 @@ body.modal-open {
   color: black;
 }
 
-.portofolio ul {
-  display: inline-flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 1200px) {
+  .portfolio-list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
 }
 
 .portofolio-list-item {
