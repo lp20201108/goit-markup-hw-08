@@ -251,16 +251,17 @@ body {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .company.section-title {
     text-align: center;
     margin-bottom: 10px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .company.section-title {
     text-align: left;
+    margin-top: 5px;
   }
 }
 
@@ -268,7 +269,7 @@ body {
   .footer .section-title,
   .subscribe.section-title {
     text-align: left;
-    padding-top: 12px;
+    margin-top: 12px;
   }
 }
 
@@ -277,7 +278,7 @@ body {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .social-footer .social-list {
     justify-content: center;
   }
@@ -492,100 +493,46 @@ body {
   }
 }
 
+.menu-btn {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-btn .icon-cross-nav {
+  display: none;
+}
+
+.menu-btn.is-open .icon-cross-nav {
+  display: block;
+}
+
+.menu-btn.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  height: 430px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.menu-container is-open {
+  display: block;
+}
+
 .header {
+  position: relative;
   padding: 25px 0;
   border: 1px solid #ececec;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-.nav-logo {
-  margin-right: 90px;
-}
-
-.site-nav {
-  display: flex;
-}
-
-.site-nav li:not(:last-child) {
-  display: inline-block;
-  margin-right: 30px;
-}
-
-.site-nav .link.current {
-  color: #2196f3;
-  position: relative;
-}
-
-.site-nav .link.current::after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  bottom: -34px;
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  border-radius: 2px;
-}
-
-.site-nav a {
-  color: black;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.site-nav a:hover, .site-nav a:focus {
-  color: #2196f3;
-}
-
-.contacts {
-  display: flex;
-}
-
-.contacts a {
-  color: #757575;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts a:hover, .contacts a:focus {
-  color: #2196f3;
-}
-
-.contacts a:hover .contacts-svg,
-.contacts a:hover .contacts-svg, .contacts a:focus .contacts-svg,
-.contacts a:focus .contacts-svg {
-  fill: #2196f3;
-}
-
-.contacts-svg {
-  fill: #757575;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-item {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.contacts-item:not(:last-child) {
-  margin-left: auto;
-  margin-right: 30px;
 }
 
 .footer {
@@ -641,7 +588,6 @@ body {
   .first-division-footer {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 60px;
     padding-right: 89px;
     padding-left: 76px;
   }
@@ -698,6 +644,26 @@ body {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .filters {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  .filters .button {
+    margin-bottom: 15px;
+  }
+  .filters .portofolio-list {
+    display: block;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portofolio-list {
+    justify-content: space-between;
+  }
+}
+
 .portofolio .project {
   font-weight: bold;
   font-size: 18px;
@@ -717,10 +683,6 @@ body {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portofolio-list-item:not(:nth-child(3n)) {
-  margin-right: 30px;
 }
 
 .portofolio-list-item:hover {
