@@ -79,6 +79,7 @@ body.modal-open {
   width: 100%;
   padding: 0px 15px;
   margin: 0 auto;
+  outline: 1px solid tomato;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
