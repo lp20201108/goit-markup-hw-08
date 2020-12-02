@@ -48,12 +48,15 @@ body {
   padding-bottom: 60px;
 }
 
-@media screen and(min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .directions {
     padding-bottom: 64px;
     padding-top: 80px;

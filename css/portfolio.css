@@ -65,6 +65,10 @@ body.modal-open {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .directions {
     padding-bottom: 64px;
     padding-top: 80px;
@@ -282,7 +286,13 @@ body.modal-open {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+@media screen and (min-width: 480px) {
+  .social-list {
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 1199px) {
@@ -569,6 +579,7 @@ body.modal-open {
   .menu-container {
     display: none;
     position: absolute;
+    z-index: 2;
     top: 100%;
     left: 0;
     width: 100%;
@@ -804,9 +815,6 @@ body.modal-open {
   .footer-container {
     display: flex;
     align-items: baseline;
-    height: 252px;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
   .first-division-footer {
     display: flex;
@@ -860,10 +868,6 @@ body.modal-open {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .portofolio-description {
-    width: 354px;
-    height: 126px;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -885,11 +889,6 @@ body.modal-open {
   letter-spacing: 0.06em;
   margin-bottom: 4px;
   color: black;
-}
-
-.portofolio .portofolio-description {
-  width: 370px;
-  height: 126px;
 }
 
 .portofolio-list-item {

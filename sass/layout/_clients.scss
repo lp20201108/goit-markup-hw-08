@@ -48,6 +48,16 @@
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .client-list-item {
+    margin-bottom: 30px;
+  }
+
+  .client-list-item:nth-child(6) {
+    margin-bottom: 0px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .client-list {
     flex-wrap: wrap;
